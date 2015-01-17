@@ -1,5 +1,5 @@
 <?php
-namespace lib\completed_classes;
+namespace lib\config;
 class route_config{
 function getParam(){
   $rigthParam = array(

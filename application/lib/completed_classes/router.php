@@ -1,6 +1,6 @@
 <?php
 namespace lib\completed_classes;
-use lib\completed_classes\route_config;
+use lib\config\route_config;
 
 class Router{
   
