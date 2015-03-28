@@ -1,15 +1,17 @@
 <?
 namespace apps\controllers;
-class Index{
+use apps\core\view_core;
+use apps\core\controller_core;
+
+class Index extends controller_core {
+    
+    function __construct(){
+	parent::__construct()
+    }
   
     public function defaultAction() {
-	echo " default action index.php";
-      
-    }
-    function somemethod(){
-	echo __METHOD__.' in defalut controller';
-    }
 
+    }
 
 }
 ?>

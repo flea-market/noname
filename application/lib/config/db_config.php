@@ -1,12 +1,12 @@
 <?php
 namespace lib\config;
-class dbConfig{
+class db_config{
 	function getParam(){
 	    $rightParam = array(
-		'SERVER'		=> 'localhost',
-		'USER'		=> 'root',
-		'PASSWORD'	=> '',
-		'DBNAME'	=> ''
+		'SERVER_NAME'	=> 'localhost',
+		'USER_NAME'		=> 'root',
+		'SERVER_PASSWORD'=> 'mysqlpassword',
+		'DATABASE_NAME'	=> 'game'
 	    );
 	    return $rightParam;
 	}

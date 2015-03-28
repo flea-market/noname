@@ -23,11 +23,22 @@ class Registry{
 	$this->values[$key] = $value;
     }
     
+    protected function remove($key){
+	unset($this->values[$key]);
+    }
+    
     public function isEmpty($key){
 	if( !isset( $this->values[$key] ) ){
 	    return true;
 	}
 	return false;
+    }
+    
+    public function removeData($key){
+	$variable = self::instance();
+	if( $variable->isEmpty( $key ) == false ){
+	    $variable->remove($key);
+	}
     }
     
     static function getData($key){

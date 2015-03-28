@@ -6,7 +6,7 @@ class Router{
   
   private function __construct(){
     $this->errorController		= 'apps/controllers/error_404';
-    $this->defaultPath			= 'apps/controllers';
+    $this->defaultPath		= 'apps/controllers';
     $this->defaultController 	= 'apps/controllers/index';
   }
   
